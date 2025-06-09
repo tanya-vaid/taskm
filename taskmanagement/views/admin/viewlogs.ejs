@@ -1,0 +1,34 @@
+ <%- include('../templates/header.ejs')   %>
+  <div class="tt">
+    <div>Admin Dashboard  </div>
+   
+    <a href="/logout" class="btn btn-warning">Logout</a>
+  </div>
+   
+  <table class="table bordered table-striped t_data">
+    <thead>
+      <tr>
+        
+        <th>Task ID</th>
+        <th>User</th>
+        <th>Action</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <% log.forEach((act,k) => { %>
+        <tr>
+          
+          <td><%= act.id %></td>
+          <td><%= act.email %></td>
+          <td><%= act.action %></td>
+          <td><%= act.createdAt %></td>
+          <td><%= act.updatedAt %></td>
+          
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<%- include('../templates/footer.ejs')   %>

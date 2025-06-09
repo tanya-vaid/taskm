@@ -1,0 +1,30 @@
+<%- include('../templates/header.ejs') %>
+
+<section class="s5">
+    <form action="/add_task" method="post" class="add-task">
+        <div class="form-group">
+            <label for="task_heading">Task heading</label>
+            <input type="text"name="task_heading" id="task-heading" class="form-control">
+
+        </div>
+ <label for="description">Description</label>
+        <div class="form-floating">
+     
+  <textarea class="form-control"name="description" id="description"></textarea>
+
+</div>
+<input type="hidden" name="email" id="email" value="<%= email %>">
+<br>
+<div class="d-grid">
+    <button class="btn btn-success" type="submit">Add</button>
+</div>
+    </form>
+</section>
+
+
+
+
+
+
+
+<%- include('../templates/footer.ejs') %>

@@ -1,0 +1,130 @@
+.header{
+    height: 6rem;
+    background-color: rgb(61, 142, 193);
+}
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(233, 250, 76);
+    padding-top: 20px;
+    font-family: 'PT Serif', serif;
+}
+ .pp{
+    display: flex;
+    justify-content: space-evenly;
+ }
+.ct{
+    
+    background-color: aqua;
+    
+    width: 50vw;
+    position: absolute;
+    
+    padding: 30px 30px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 25vw;
+    border: 3px solid blue;
+    font-size: 20px;
+    font-weight: bold;
+    
+}  
+
+.cc{
+    
+    background-color: rgb(245, 232, 215);
+    
+    width: 50vw;
+    position: absolute;
+    
+    padding: 30px 30px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 25vw;
+    border: 3px solid blue;
+    font-size: 20px;
+    font-weight: bold;
+    
+}  
+ 
+
+
+.bg{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.s1{
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(233, 105, 105, 0.5) , rgba(125,125,125,0.5));
+    position: relative;
+}
+
+
+.s2{
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(40, 28, 28, 0.7) , rgba(100,10,101,0.7));
+    position: relative;
+}
+
+
+.s3{
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(47, 214, 28, 0.7) , rgba(111,100,255,0.7));
+    position: relative;
+}
+
+
+.s4{
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(255, 255, 244, 0.7) , rgba(255,255,109,0.7));
+    position: relative;
+}
+.tt{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(253, 251, 251);
+    background-color: #534949;
+}
+.add_btn{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.t_data{
+    width: 70%;
+    margin: auto;
+}
+.register-frm{
+    margin: auto;
+    width: 40%;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    padding-top: 20px;
+    background-color: #f3e9e9;
+}
+
+.add-task{
+    margin: auto;
+    width: 60vw;
+    border: 3px solid green;
+    border-radius: 15px;
+    padding: 30px 30px;
+    margin-top: 30px;
+}
+.footer{
+    height: 16rem;
+    background-color: #06022c;
+}

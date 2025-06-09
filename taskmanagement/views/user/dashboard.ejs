@@ -1,0 +1,32 @@
+ <%- include('../templates/header.ejs')   %>
+  <div class="tt">
+    <div>User Dashboard  </div>
+    <a href="/logout" class="btn btn-warning">Logout</a>
+  </div>
+   <div class="add_btn"><a href="/add_task" class="btn btn-success">Add Task</a></div>
+  <table class="table bordered table-striped t_data">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>User Name</th>
+        <th>Task Heading</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <% tasks.forEach((user,k) => { %>
+        <tr>
+          <td><%= k+1 %></td>
+          <td><%= user.email %></td>
+          <td><%= user.task_heading %></td>
+          <td><%= user.description %></td>
+          <td><a href="/edit/<%=user.id %>" class="btn btn-success">Edit</a> </td>
+          <td><a href="/delete/<%= user.id %>" class="btn btn-danger">Delete</a></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<%- include('../templates/footer.ejs')   %>
